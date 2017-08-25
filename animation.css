@@ -1,0 +1,38 @@
+.top{animation:topmove 2s linear 0s 1 normal both running;}
+.bottom{animation:bottommove 2s linear 2s 1 normal both running;}
+.left{animation:leftmove 2s linear 4s 1 normal both running;}
+.right{animation:rightmove 2s linear 6s 1 normal both running;}
+.back{animation:backmove 2s linear 8s 1 normal both running;}
+.front{animation:frontmove 2s linear 10s 1 normal both running;}
+.move{transform-style:preserve-3d;animation:around 4s linear 12s infinite normal both running;}
+.rotate{perspective:500px;}
+
+.move:hover .top{background-color:yellow;color:white;border:none;}
+.move:hover .bottom{background-color:green;color:white;border:none;}
+.move:hover .front{background-color:pink;color:white;border:none;}
+.move:hover .back{background-color:red;color:white;border:none;}
+.move:hover .left{background-color:cyan;color:white;border:none;}
+.move:hover .right{background-color:blue;color:white;border:none;}
+
+
+@keyframes topmove{
+	100%{transform-origin:0 100px 0;transform:rotate3d(1,0,0,90deg) translate3d( 0,0,100px);}
+}
+@keyframes bottommove{
+	100%{transform-origin:0 100PX 0;transform:rotate3d(1,0,0,-90deg) translate3d(0,0,100px);}
+}
+@keyframes leftmove{
+	100%{transform-origin:100px 0 0;transform:rotate3d(0,1,0,-90deg) translate3d(0,0,100px);}
+}
+@keyframes rightmove{
+	100%{transform-origin:100px 0 0;transform:rotate3d(0,1,0,90deg) translate3d(0,0,100px)}
+}
+@keyframes backmove{
+	100%{transform-origin:100px 0 0;transform:rotate3d(0,1,0,180deg) translate3d(0,0,100px);}
+}
+@keyframes frontmove{
+	100%{transform-origin:100px 0 0;transform:rotate3d(0,1,0,0deg) translate3d(0,0,100px);}
+}
+@keyframes around{
+	100%{transform:rotate3d(1,1,1,360deg);}
+}
