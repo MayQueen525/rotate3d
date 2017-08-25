@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>rotate3d</title>
+	<link rel="stylesheet" type="text/css" href="reset.css">
+	<link rel="stylesheet" type="text/css" href="animation.css">
+</head>
+<body>
+<div class="rotate">
+	<div class="move">
+		<span class="square left">left</span>
+		<span class="square right">right</span>
+		<span class="square top">top</span>
+		<span class="square bottom">bottom</span>
+		<span class="square back">back</span>
+		<span class="square front">front</span>
+	</div>
+</div>
+</body>
+</html>
